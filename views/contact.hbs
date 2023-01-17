@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+        <h4>names</h4>
+        {{#each users}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+    <ul>
+        <h4>logins</h4>
+        {{#each users}}
+            <li>{{login}}</li>
+        {{/each}}
+    </ul>
+    <ul>
+        <h4>passwords</h4>
+        {{#each users}}
+            <li>{{password}}</li>
+        {{/each}}
+    </ul>
+    </div>
+</body>
+</html>
